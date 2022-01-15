@@ -1,0 +1,693 @@
+* {
+  border: 0;
+  padding: 0;
+  margin: 0;
+  background: #f9f8f4;
+  font-family: "Helvetica", sans-serif;
+}
+/*888  888 8888888888        d8888 8888888b.  8888888888 8888888b.  
+888    888 888              d88888 888  "Y88b 888        888   Y88b 
+888    888 888             d88P888 888    888 888        888    888 
+8888888888 8888888        d88P 888 888    888 8888888    888   d88P 
+888    888 888           d88P  888 888    888 888        8888888P"  
+888    888 888          d88P   888 888    888 888        888 T88b   
+888    888 888         d8888888888 888  .d88P 888        888  T88b  
+888    888 8888888888 d88P     888 8888888P"  8888888888 888   T88b  */
+
+/* STYLES TO CREATe HEADER */
+header {
+  position: fixed;
+
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  padding: 35px 20%;
+  z-index: 1000;
+  transition: 0.6s;
+  background-color: #f9f8f4;
+}
+.nav-item {
+  width: 125px;
+}
+
+.hamburger {
+  display: none;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  margin: 5px auto;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  background-color: #101010;
+}
+.tree {
+  padding-right: 5%;
+  position: fixed;
+  left: 5%;
+  top: 2%;
+  height: 6%;
+  transition: 0.6s;
+  background: transparent;
+}
+.navSleep {
+  padding-right: 5%;
+  position: fixed;
+  left: 13%;
+  top: 3%;
+  height: 5vh;
+  transition: 0.6s;
+}
+header ul {
+  position: relative;
+  display: flex;
+
+  align-items: center;
+  margin-right: 0%;
+}
+header ul li {
+  list-style: none;
+}
+header ul li:hover {
+  list-style: none;
+  border-bottom: 5px solid black;
+  opacity: 0.2;
+  transition: 0.6s;
+}
+header ul li a {
+  text-decoration: none;
+  color: black;
+  width: 100%;
+  font-size: 14px;
+}
+
+ul li a:hover {
+  background: #f9f8f4;
+  border-bottom: 2px black;
+  opacity: 0.2;
+  transition: 0.6s;
+}
+.sticky {
+  padding: 8px 0px;
+  background: #f9f8f4;
+  opacity: 0.7;
+  transition: 0.6s;
+}
+.navTitle {
+  color: #f9f8f4;
+  background-color: #f9f8f4;
+  padding-right: 3%;
+  position: fixed;
+  left: 0;
+  height: 25vh;
+}
+.hiddenLogo {
+  display: none;
+  visibility: hidden;
+}
+.logoBox {
+  margin-left: 2%;
+}
+.nav-item {
+  text-align: center;
+}
+
+/*######     #    ######  ######     #    #          #    #     # 
+ #     #   # #   #     # #     #   # #   #         # #    #   #  
+ #     #  #   #  #     # #     #  #   #  #        #   #    # #   
+ ######  #     # ######  ######  #     # #       #     #    #    
+ #       ####### #   #   #   #   ####### #       #######   # #   
+ #       #     # #    #  #    #  #     # #       #     #  #   #  
+ #       #     # #     # #     # #     # ####### #     # #     # */
+/* STYLES TO CREATE PARALLAX */
+.div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  width: 100%;
+  height: 100vh;
+  background-image: url(./img/sleepless-office-decor_116.png);
+  background-size: cover;
+}
+
+/*██ ███ ██ ███████ ██████   ██████          ██     ██  ██████  ██████  ██████  ███████ 
+██ ████   ██ ██      ██   ██ ██    ██         ██     ██ ██    ██ ██   ██ ██   ██ ██      
+██ ██ ██  ██ ███████ ██████  ██    ██         ██  █  ██ ██    ██ ██████  ██   ██ ███████ 
+██ ██  ██ ██      ██ ██      ██    ██         ██ ███ ██ ██    ██ ██   ██ ██   ██      ██ 
+██ ██   ████ ███████ ██       ██████           ███ ███   ██████  ██   ██ ██████  ███████ */
+/* INSPO WORDS */
+.inspoContainer {
+  text-align: center;
+  background: #f9f8f4;
+}
+.inspoWords {
+  margin: 10% 9%;
+  margin-bottom: 5%;
+  font-weight: 300;
+  font-size: 38px;
+}
+.inspoSign {
+  margin-bottom: 8%;
+  font-size: 14px;
+  font-weight: 100;
+  letter-spacing: 3px;
+}
+
+/*██████████  ██ ██ ███    ██ ██   ██     ████████  █████  ███    ██ ██   ██ 
+   ██    ██   ██ ██ ████   ██ ██  ██         ██    ██   ██ ████   ██ ██  ██  
+   ██    ███████ ██ ██ ██  ██ █████          ██    ███████ ██ ██  ██ █████   
+   ██    ██   ██ ██ ██  ██ ██ ██  ██         ██    ██   ██ ██  ██ ██ ██  ██  
+   ██    ██   ██ ██ ██   ████ ██   ██        ██    ██   ██ ██   ████ ██   ██ */
+/* THINK TANK */
+.thinkContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 7%;
+  justify-content: space-between;
+  background-color: #f9f8f4;
+}
+.color {
+  background: #f9f8f4;
+}
+.buildingTitle {
+  margin-bottom: 3%;
+  font-size: 38px;
+  font-weight: 300;
+}
+.thinkTank {
+  flex: 4;
+  background-color: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.thinkCard {
+  margin-right: 20px;
+  flex: 0 0 300px;
+  margin-bottom: 3%;
+}
+.thinkTitle2 {
+  font-size: 15px;
+  font-weight: 400;
+}
+.thinkWords {
+  font-size: 15px;
+  font-weight: 300;
+}
+.thinkPic {
+  height: 50vh;
+  margin: auto;
+  display: block;
+}
+.learnMoreButton {
+  width: 250px;
+  height: 50px;
+  font-size: 15px;
+  margin: 45px 0px;
+  background-color: #355556;
+  color: whitesmoke;
+}
+.button1 {
+  height: 30px;
+}
+
+.hideTitle {
+  display: none;
+  visibility: hidden;
+}
+
+/*█████████     ██ ██████  ███████ ███████ ██   ██  ██████  ██     ██ 
+██      ██      ██ ██   ██ ██      ██      ██   ██ ██    ██ ██     ██ 
+███████ ██      ██ ██   ██ █████   ███████ ███████ ██    ██ ██  █  ██ 
+     ██ ██      ██ ██   ██ ██           ██ ██   ██ ██    ██ ██ ███ ██ 
+███████ ███████ ██ ██████  ███████ ███████ ██   ██  ██████   ███ ███ */
+/* styling for team slideshow */
+.teamContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 7%;
+  justify-content: space-around;
+  background-color: transparent;
+}
+
+.no-js .owl-carousel,
+.owl-carousel.owl-loaded {
+  display: block;
+  margin-left: 4%;
+}
+#owl-carousel {
+  width: 92%;
+}
+.carousel-wrapper {
+  width: 1000px;
+  margin: auto;
+  position: relative;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+.owl-carousel .owl-nav {
+  overflow: hidden;
+  height: 0px;
+}
+
+.owl-theme .owl-dots .owl-dot.active span,
+.owl-theme .owl-dots .owl-dot:hover span {
+  background: #5110e9;
+}
+
+.owl-carousel .item {
+  text-align: center;
+}
+
+.owl-carousel .nav-button {
+  height: 50px;
+  width: 25px;
+  cursor: pointer;
+  position: absolute;
+  top: 110px !important;
+}
+
+.owl-carousel .owl-prev.disabled,
+.owl-carousel .owl-next.disabled {
+  pointer-events: none;
+  opacity: 0.25;
+}
+
+.owl-carousel .owl-prev {
+  left: -25px;
+}
+
+.owl-carousel .owl-next {
+  right: -25px;
+}
+
+.owl-theme .owl-nav [class*="owl-"] {
+  color: #355556;
+
+  background: #355556;
+  border-radius: 3px;
+}
+.teamTitle {
+  padding-top: 10%;
+  margin-left: 7%;
+  font-size: 38px;
+  font-weight: 300;
+}
+.teamLower {
+  margin-bottom: 5%;
+  margin-left: 7%;
+  font-size: 38px;
+  font-weight: 300;
+}
+
+#arrowSize {
+  font-size: 25px;
+  background: #355556;
+  text-align: center;
+}
+.owl-carousel .prev-carousel:hover {
+  background-position: 0px -53px;
+}
+
+.owl-carousel .next-carousel:hover {
+  background-position: -24px -53px;
+}
+
+.teamTitle2 {
+  font-size: 15px;
+  font-weight: 400;
+  margin: 8px 0;
+}
+.teamCard {
+  margin: 0 10px;
+  text-align: justify;
+}
+.teamWords {
+  font-size: 14px;
+  font-weight: 100;
+}
+
+/*██████ ██████   ██████  ███    ███ ███████ 
+██   ██ ██    ██ ██    ██ ████  ████ ██      
+██████  ██    ██ ██    ██ ██ ████ ██ ███████ 
+██   ██ ██    ██ ██    ██ ██  ██  ██      ██ 
+██   ██  ██████   ██████  ██      ██ ███████  */
+/* styling for rooms section */
+.color2 {
+  background-color: #f9f8f4;
+}
+.roomContainer {
+  display: flex;
+  flex-direction: row;
+  margin: 0 7%;
+  justify-content: space-around;
+  background-color: transparent;
+  background-color: transparent;
+}
+.roomInner {
+  flex: 4;
+  background-color: transparent;
+
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.room {
+  padding: 20px;
+  height: 41vh;
+}
+.roomText {
+  margin-top: 12%;
+}
+.roomWords {
+  font-size: 38px;
+  font-weight: 300;
+}
+
+/*█████████████   ██████  ████████ ███████ ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+█████   ██    ██ ██    ██    ██    █████   ██████  
+██      ██    ██ ██    ██    ██    ██      ██   ██ 
+██       ██████   ██████     ██    ███████ ██   ██ */
+/* footer */
+.footer {
+  background: #355556;
+  color: #fff;
+  height: auto;
+  display: flex;
+  justify-content: space-around;
+}
+.center {
+  padding: 30px 0;
+  background: #355556;
+}
+.footerLinks {
+  margin-top: 3%;
+  display: flex;
+  flex-direction: column;
+  background: #355556;
+}
+.footerTitle {
+  background: #355556;
+  font-size: 38px;
+  font-weight: 200;
+  margin-top: 6%;
+}
+.footerColor {
+  background: #355556;
+}
+.footerWords {
+  font-size: 14px;
+  color: whitesmoke;
+  margin: 15px 10px;
+  text-decoration: none;
+  background: #355556;
+}
+.mobileFooter {
+  background: #355556;
+}
+.button2 {
+  height: 30px;
+  background: transparent;
+}
+.footerButton {
+  width: 250px;
+  height: 50px;
+  font-size: 15px;
+  margin: 45px 0px;
+  background-color: #355556;
+  color: whitesmoke;
+  border: 2px solid whitesmoke;
+  margin-right: 12px;
+}
+.footerButton:hover {
+  background-color: whitesmoke;
+  color: #355556;
+}
+.copyFooter {
+  font-size: 10px;
+  color: gray;
+  background: #355556;
+}
+.button1 {
+  background: transparent;
+}
+/*███  ███  ██████  ██████  ██ ██      ███████ 
+████  ████ ██    ██ ██   ██ ██ ██      ██      
+██ ████ ██ ██    ██ ██████  ██ ██      █████   
+██  ██  ██ ██    ██ ██   ██ ██ ██      ██      
+██      ██  ██████  ██████  ██ ███████ ███████ */
+/* !!!!!!!!!!!MOBILE THINGS!!!!!!!!!!! */
+
+@media screen and (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+  body {
+    width: auto;
+  }
+
+  header {
+    padding: 40px 0%;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 70vw;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .thinkContainer {
+    flex-direction: column;
+    text-align: center;
+  }
+  .buildingTitle {
+    text-align: center;
+  }
+  .teamTitle {
+    text-align: center;
+  }
+  .teamLower {
+    text-align: center;
+  }
+  .roomText {
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-align: center;
+  }
+  .mobileFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+    text-align: center;
+  }
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+  }
+  .learnMoreButton {
+    margin: 24px 0px;
+  }
+  .footerWords {
+    margin-top: 5%;
+    margin-bottom: 3%;
+  }
+  .mobileMoreAbout {
+    display: flex;
+    justify-content: space-around;
+  }
+  .room {
+    width: 100vw;
+  }
+  .button1 {
+    height: 90px;
+    background: transparent;
+  }
+  #navSleep {
+    display: none;
+    visibility: hidden;
+    top: 0;
+  }
+  .navSleep {
+    top: 5vh;
+    height: 5vh;
+    left: 6vw;
+    background: transparent;
+  }
+  .sticky {
+    display: flex;
+    justify-content: right;
+  }
+  .footerButton {
+    margin: 20px 0;
+  }
+}
+/*████████ █████ ██████  ██     ███████ ████████ 
+   ██    ██   ██ ██   ██ ██      ██         ██    
+   ██    ███████ ██████  ██      █████      ██    
+   ██    ██   ██ ██   ██ ██      ██         ██    
+   ██    ██   ██ ██████  ███████ ███████    ██  */
+/* !!!!!!!!!TABLET MEDIA QUERIES!!!!!!!!! */
+@media screen and (min-device-width: 768px) and (max-width: 1024px) {
+  main {
+    flex-direction: column;
+  }
+  .tree {
+    height: 65px;
+  }
+  .nav-menu {
+    position: fixed;
+    left: -100%;
+    top: 5rem;
+    flex-direction: column;
+    background-color: #fff;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+    box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+  }
+  .nav-menu.active {
+    left: 0;
+  }
+
+  .nav-item {
+    margin: 2.5rem 0;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    margin-left: 400px;
+  }
+
+  .hamburger.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .hamburger.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .hamburger.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
+  .thinkContainer {
+    flex-direction: column;
+  }
+  .buildingTitle {
+    text-align: center;
+  }
+  .teamTitle {
+    text-align: center;
+  }
+  .teamLower {
+    text-align: center;
+  }
+  .roomText {
+    text-align: center;
+  }
+  .footer {
+    flex-direction: column;
+  }
+  .footerTitle {
+    text-align: center;
+  }
+  .mobileTank {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    position: relative;
+    text-align: center;
+  }
+  .mobileFooter {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    position: relative;
+    text-align: center;
+  }
+  .footerLinks {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+    position: relative;
+    text-align: center;
+  }
+  .learnMoreButton {
+    margin: 24px 0px;
+  }
+  .footerWords {
+    margin-top: 2%;
+    margin-bottom: 3%;
+  }
+  .mobileMoreAbout {
+    display: flex;
+    justify-content: space-around;
+  }
+  .button1 {
+    height: 90px;
+  }
+  #navSleep {
+    display: none;
+    visibility: hidden;
+    left: 6%;
+    height: 7vh;
+    top: 0;
+  }
+  .sticky {
+    display: flex;
+    justify-content: right;
+  }
+}
